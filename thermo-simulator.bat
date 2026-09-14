@@ -5,7 +5,7 @@ color 0A
 echo.
 echo ========================================
 echo   THERMODYNAMIC CYCLE SIMULATOR
-echo   ITU Civil & Mechanical Engineering
+echo   ITU Civil ^& Mechanical Engineering
 echo ========================================
 echo.
 echo Usage: thermo-simulator [options]
