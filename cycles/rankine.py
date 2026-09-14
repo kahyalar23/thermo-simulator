@@ -35,8 +35,8 @@ class RankineCycle:
         s_2 = s_1
         h_2 = PropsSI("H", "S", s_2 * 1000, "P", p_high_mpa * 1e6, self.fluid) / 1000 + h_f_low
         h_2 = PropsSI("H", "S", s_2 * 1000, "P", p_high_mpa * 1e6, self.fluid) / 1000
-        v_f_low = PropsSI("V", "P", p_low_mpa * 1e6, "Q", 0.0, self.fluid) / 1000
-        w_pump = v_f_low * (p_high_mpa - p_low_mpa)
+        v_f_low = PropsSI("V", "P", p_low_mpa * 1e6, "Q", 0.0, self.fluid)
+        w_pump = v_f_low * (p_high_mpa - p_low_mpa) * 1e3
         h_2 = h_1 + w_pump
 
         h_3 = PropsSI("H", "T", self.T_sh + 273.15, "P", p_high_mpa * 1e6, self.fluid) / 1000
